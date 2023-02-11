@@ -76,6 +76,8 @@ body {
   --background-color-1: #ffffff;
   --beckground-color-2: #2e2f42;
   --background-color-3: #f4f4fd;
+  --background-color-4: #4d5ae5;
+  --background-color-5: #404bbf;
 
   --first-line-height: 1.5;
   --second-line-height: 1.33;
@@ -209,6 +211,24 @@ body {
 .hero-btn:focus {
   background: var(--third-color);
 }
+
+/*overlay*/
+.overlay {
+  max-width: 1440px;
+  min-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url('../images/people-office\ 1\ \(1\).jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: var(--beckground-color-2);
+}
 /*======================/HERO============================*/
 /*====================SOLUTIONS==========================*/
 
@@ -232,9 +252,34 @@ body {
   column-gap: 24px;
 }
 
-/*LI*/
+/*li*/
 .solution-item {
   flex-basis: calc((100% - 72px) / 4);
+}
+
+.solution-item::before {
+  display: block;
+  content: '';
+  height: 64px;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--background-color-3);
+  border-radius: 4px;
+}
+
+.solution-item:nth-child(1)::before {
+  background-image: url(../images/antenna\ 1.svg);
+}
+.solution-item:nth-child(2)::before {
+  background-image: url(../images/clock\ 1.svg);
+}
+.solution-item:nth-child(3)::before {
+  background-image: url(../images/diagram\ 1.svg);
+}
+.solution-item:nth-child(4)::before {
+  background-image: url(../images/astronaut\ 1.svg);
 }
 
 /*h3-подзаголовок*/
@@ -342,10 +387,29 @@ body {
   text-align: center;
   letter-spacing: var(--first-letter-spacing);
 
-  /* SLATE */
-
   color: var(--text-color);
 }
+/*ul(team-list-link)- команда-список-cсылка*/
+.team-list-link {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  outline: 1px solid red;
+  align-items: center;
+}
+
+/*li(team-item-link) - команда-элемент-ссылка*/
+.team-item-link {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: var(--background-color-4);
+}
+.team-item-link:hover {
+  background-color: var(--background-color-5);
+}
+
 /*=====================/TEAM============================*/
 /*====================FOOTER=============================*/
 .footer {
