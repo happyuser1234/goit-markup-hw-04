@@ -392,8 +392,8 @@ body {
 .icon-list-link {
   display: flex;
   list-style: none;
-
-  outline: 1px solid red;
+  justify-content: center;
+  gap: 24px;
 }
 
 /*li(icon-item-link) - иконка-элемент-ссылка*/
@@ -402,7 +402,6 @@ body {
   height: 40px;
   background-color: var(--background-color-4);
   border-radius: 50%;
-  margin-right: 24px;
 }
 .icon-item-link:nth-first-child {
   margin-left: 16px;
@@ -413,14 +412,48 @@ body {
   background-color: var(--background-color-5);
 }
 
-/*ccылка*/
+/*иконка-ccылка*/
 .icon-link {
   display: block;
   padding: 12px;
 }
 
 /*=====================/TEAM============================*/
-/*====================FOOTER=============================*/
+/*====================CUSTOMES==========================*/
+
+/*секция*/
+.customes {
+  padding-top: 130px;
+  padding-bottom: 120px;
+  text-align: center;
+}
+.customes-border {
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  padding: 16px 32px;
+}
+/*h2*/
+.customes-titel {
+  margin-bottom: 72px;
+}
+
+/*ul*/
+.customes-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+.customes-icon {
+  fill: #8e8f99;
+}
+.customes-icon:hover,
+.customes-icon:focus {
+  fill: #404bbf;
+}
+
+/*====================/CUSTOMES==========================*/
+/*====================FOOTER============================*/
 .footer {
   padding-top: 100px;
   padding-bottom: 100px;
