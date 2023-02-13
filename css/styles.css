@@ -427,11 +427,7 @@ body {
   padding-bottom: 120px;
   text-align: center;
 }
-.customes-border {
-  border: 1px solid #8e8f99;
-  border-radius: 4px;
-  padding: 16px 32px;
-}
+
 /*h2*/
 .customes-titel {
   margin-bottom: 72px;
@@ -444,6 +440,22 @@ body {
   justify-content: center;
   gap: 24px;
 }
+
+/*border-рамка ссылки*/
+.customes-border {
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  padding: 16px 32px;
+}
+
+/*a-ссылка,внутри которой иконка*/
+.customes-link {
+  display: block;
+  width: 104px;
+  height: 56px;
+}
+
+/*иконка*/
 .customes-icon {
   fill: #8e8f99;
 }
@@ -459,7 +471,11 @@ body {
   padding-bottom: 100px;
   background: var(--beckground-color-2);
 }
+.footer-container {
+  display: flex;
+}
 
+/*a-ссылка*/
 .logo-footer {
   margin-top: 0;
   margin-bottom: 16px;
@@ -470,6 +486,8 @@ body {
   line-height: var(--second-line-height);
   color: var(--next-color);
 }
+
+/*p-текст*/
 .footer-text {
   width: 264px;
 
@@ -477,6 +495,14 @@ body {
   letter-spacing: var(--first-letter-spacing);
 
   color: var(--sixth-color);
+}
+
+/*заголовок*/
+.footer-titel {
+  font-weight: var(--typical-font-weight);
+  line-height: 1.5;
+  letter-spacing: var(--first-letter-spacing);
+  color: var(--first-color);
 }
 /*===================/FOOTER=============================*/
 /*=================MAIN MENU=============================*/
