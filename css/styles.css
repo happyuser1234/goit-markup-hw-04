@@ -24,9 +24,6 @@ ul {
 button {
   cursor: pointer;
 }
-a {
-  cursor: pointer;
-}
 img {
   display: block;
 }
@@ -73,6 +70,7 @@ body {
   --fourth-color: #4d5ae5;
   --fifth-color: #f4f4fd;
   --sixth-color: #e7e9fc;
+  --seventh-color: #8e8f99;
   --next-color: #f4f4fd;
   --text-color: #434455;
 
@@ -81,6 +79,7 @@ body {
   --background-color-3: #f4f4fd;
   --background-color-4: #4d5ae5;
   --background-color-5: #404bbf;
+  --background-color-6: #31d0aa;
 
   --first-line-height: 1.5;
   --second-line-height: 1.33;
@@ -456,16 +455,16 @@ body {
   display: block;
   width: 100%;
   height: 100%;
-  border: 1px solid #8e8f99;
+  border: 1px solid var(--seventh-color);
   border-radius: 4px;
   padding: 16px 32px;
-  color: #8e8f99;
+  color: var(--seventh-color);
 }
 
 .customes-link:hover,
 .customes-link:focus {
-  color: #404bbf;
-  border-color: #404bbf;
+  color: var(--third-color);
+  border-color: var(--third-color);
 }
 
 /*иконка,которая наследует цвет от родителя*/
@@ -486,11 +485,14 @@ body {
 /*псевдокласс для разделения двух элементов в контейнере*/
 .footer-container {
   display: flex;
-  justify-content: center;
-  gap: 120px;
 }
 
-/*a-ссылка*/
+/*wrapper for a and p*/
+.footer-wrapper-content {
+  margin-right: 120px;
+}
+
+/*a-главная ссылка*/
 .logo-footer {
   margin-top: 0;
   margin-bottom: 16px;
@@ -512,7 +514,7 @@ body {
   color: var(--sixth-color);
 }
 
-/*h3-подзаголовок списка ссылок в соцсети*/
+/*h3-подзаголовок списка ссылок соцсетей*/
 .footer-titel {
   font-weight: var(--typical-font-weight);
   line-height: 1.5;
@@ -520,13 +522,35 @@ body {
   color: var(--first-color);
   margin-bottom: 16px;
 }
-/*ul для ссылок*/
+/*ul для ссылок соцсетей*/
 .footer-list {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 16px;
+}
+
+/*li для ссылок соцсетей*/
+.footer-item {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  padding: 8px;
+}
+.footer-item:hover,
+.footer-item:focus {
+  background-color: var(--background-color-6);
+}
+
+/*a для ссылки*/
+.footer-link {
   display: flex;
   justify-content: center;
   gap: 16px;
 
-  outline: 2px solid green;
+  width: 100%;
+  height: 100%;
 }
 
 /*===================/FOOTER=============================*/
