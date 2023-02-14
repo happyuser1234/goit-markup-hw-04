@@ -24,6 +24,9 @@ ul {
 button {
   cursor: pointer;
 }
+a {
+  cursor: pointer;
+}
 img {
   display: block;
 }
@@ -267,6 +270,8 @@ body {
   background-position: center;
   background-color: var(--background-color-3);
   border-radius: 4px;
+
+  margin-bottom: 8px;
 }
 
 .solution-item:nth-child(1)::before {
@@ -387,6 +392,7 @@ body {
   letter-spacing: var(--first-letter-spacing);
 
   color: var(--text-color);
+  margin-bottom: 8px;
 }
 /*ul(icon-list-link)- иконка-список-cсылка*/
 .icon-list-link {
@@ -441,38 +447,49 @@ body {
   gap: 24px;
 }
 
-/*border-рамка ссылки*/
-.customes-border {
+/*li*/
+.customes-item {
+  height: 88px;
+  width: calc((100%-5 * 24px) / 6);
+}
+
+/*a-ссылка*/
+.customes-link {
+  display: block;
+  width: 100%;
+  height: 100%;
   border: 1px solid #8e8f99;
   border-radius: 4px;
   padding: 16px 32px;
+  color: #8e8f99;
 }
 
-/*a-ссылка,внутри которой иконка*/
-.customes-link {
-  display: block;
-  width: 104px;
-  height: 56px;
+.customes-link:hover,
+.customes-link:focus {
+  color: #404bbf;
+  border-color: #404bbf;
 }
 
-/*иконка*/
+/*иконка,которая наследует цвет от родителя*/
 .customes-icon {
-  fill: #8e8f99;
-}
-.customes-icon:hover,
-.customes-icon:focus {
-  fill: #404bbf;
+  fill: currentColor;
 }
 
 /*====================/CUSTOMES==========================*/
 /*====================FOOTER============================*/
+
+/*секция*/
 .footer {
   padding-top: 100px;
   padding-bottom: 100px;
   background: var(--beckground-color-2);
 }
+
+/*псевдокласс для разделения двух элементов в контейнере*/
 .footer-container {
   display: flex;
+  justify-content: center;
+  gap: 120px;
 }
 
 /*a-ссылка*/
@@ -497,13 +514,23 @@ body {
   color: var(--sixth-color);
 }
 
-/*заголовок*/
+/*h3-подзаголовок списка ссылок в соцсети*/
 .footer-titel {
   font-weight: var(--typical-font-weight);
   line-height: 1.5;
   letter-spacing: var(--first-letter-spacing);
   color: var(--first-color);
+  margin-bottom: 16px;
 }
+/*ul для ссылок*/
+.footer-list {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+
+  outline: 1px solid red;
+}
+
 /*===================/FOOTER=============================*/
 /*=================MAIN MENU=============================*/
 .menu {
