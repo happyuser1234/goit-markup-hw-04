@@ -587,24 +587,18 @@ body {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
 }
 
-/*li карточки Portfolio
-.portfolio-item {
-  margin-bottom: 48px;
-  margin-right: 24px;
-  flex-basis: calc((100% - 48px) / 3);
-}
-.portfolio-item:nth-last-child(3n + 1) {
-  margin-right: 0;
-}
-.portfolio-item:nth-last-child(-n + 3) {
-  margin-bottom: 0;
+/*a для карточки*/
+.portfolio-link {
+  display: block;
+  text-decoration: none;
 }
 
-/*hover,focus на li-ку
-.portfolio-item:hover,
-.portfolio-item:focus {
+.portfolio-link:hover,
+.portfolio-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
@@ -633,4 +627,5 @@ body {
   color: var(--text-color);
   padding-left: 16px;
 }
+
 /*================/MAIN MENU=============================*/
