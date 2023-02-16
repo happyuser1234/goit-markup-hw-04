@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!---------------------------------HEADER--------------------------------------->
+    <!--------------HEADER---------------------------------------------------------->
     <header class="header">
       <div class="container header-container">
         <nav class="header-navigation">
@@ -59,7 +59,7 @@
       </div>
     </header>
     <main>
-      <!------------------------------HERO----------------------------------->
+      <!----------HERO------------------------------------------------>
 
       <section class="hero section overlay">
         <div class="container">
@@ -68,12 +68,17 @@
         </div>
       </section>
 
-      <!---------------------------SOLUTIONS---------------------------------->
+      <!-----------SOLUTIONS------------------------------------------------->
       <section class="solutions section">
         <div class="container">
           <h2 class="section-title visually-hidden">solution</h2>
           <ul class="solutions-list">
             <li class="solution-item">
+              <div class="solution-svg">
+                <svg width="64" height="64">
+                  <use href="./images/sprite.svg#icon-antenna-1"></use>
+                </svg>
+              </div>
               <h3 class="solution-subtitle">Strategy</h3>
               <p class="solution-text">
                 Our goal is to identify the business problem to walk away with
@@ -82,6 +87,11 @@
             </li>
 
             <li class="solution-item">
+              <div class="solution-svg">
+                <svg width="64" height="64">
+                  <use href="./images/sprite.svg#icon-clock-1"></use>
+                </svg>
+              </div>
               <h3 class="solution-subtitle">Punctuality</h3>
               <p class="solution-text">
                 Bring the key message to the brand's audience for the best price
@@ -90,6 +100,11 @@
             </li>
 
             <li class="solution-item">
+              <div class="solution-svg">
+                <svg width="64" height="64">
+                  <use href="./images/sprite.svg#icon-diagram-1"></use>
+                </svg>
+              </div>
               <h3 class="solution-subtitle">Diligence</h3>
               <p class="solution-text">
                 Research and confirm brands that present the strongest digital
@@ -98,6 +113,11 @@
             </li>
 
             <li class="solution-item">
+              <div class="solution-svg">
+                <svg width="64" height="64">
+                  <use href="./images/sprite.svg#icon-astronaut-1"></use>
+                </svg>
+              </div>
               <h3 class="solution-subtitle">Technologies</h3>
               <p class="solution-text">
                 Design practice focused on digital experiences. We bring forth a
@@ -107,7 +127,7 @@
           </ul>
         </div>
       </section>
-      <!-------------------------SERVICES------------------------->
+      <!------------SERVICES------------------------------------------->
       <section class="services section">
         <div class="container">
           <h2 class="services-title centered">What are we doing</h2>
@@ -140,12 +160,12 @@
         </div>
       </section>
 
-      <!-----------------------------------TEAM--------------------------------->
+      <!--------------TEAM------------------------------------------->
       <section class="team section">
         <div class="container">
           <h2 class="team-title centered section-title">Our Team</h2>
           <ul class="team-list">
-            <!--Mark Guerrero-->
+            <!--карточка Mark Guerrero-->
             <li class="team-item">
               <img
                 class="team-img"
@@ -159,54 +179,43 @@
                 <p class="team-text centered">Product Designer</p>
 
                 <!--иконки с соцсетями для Mark Guerrero-->
-                <ul class="icon-list-link">
-                  <li class="icon-item-link">
-                    <div class="icon-link">
-                      <a href="">
-                        <svg class="icon" width="16" height="16">
-                          <use
-                            href="./images/sprite.svg#icon-instagram-2"
-                          ></use>
-                        </svg>
-                      </a>
-                    </div>
+                <ul class="team-list-icon">
+                  <li class="team-item-icon">
+                    <a class="team-link-icon" href="#">
+                      <svg class="team-icon" width="16" height="16">
+                        <use href="./images/sprite.svg#icon-instagram-2"></use>
+                      </svg>
+                    </a>
                   </li>
 
-                  <li class="icon-item-link">
-                    <div class="icon-link">
-                      <a href="">
-                        <svg class="icon" width="16" height="16">
-                          <use href="./images/sprite.svg#icon-twitter-1"></use>
-                        </svg>
-                      </a>
-                    </div>
+                  <li class="team-item-icon">
+                    <a class="team-link-icon" href="#">
+                      <svg class="team-icon" width="16" height="16">
+                        <use href="./images/sprite.svg#icon-twitter-1"></use>
+                      </svg>
+                    </a>
                   </li>
 
-                  <li class="icon-item-link">
-                    <div class="icon-link">
-                      <a href="">
-                        <svg class="icon" width="16" height="16">
-                          <use href="./images/sprite.svg#icon-facebook-1"></use>
-                        </svg>
-                      </a>
-                    </div>
+                  <li class="team-item-icon">
+                    <a class="team-link-icon" href="#">
+                      <svg class="team-icon" width="16" height="16">
+                        <use href="./images/sprite.svg#icon-facebook-1"></use>
+                      </svg>
+                    </a>
                   </li>
 
-                  <li class="icon-item-link">
-                    <div class="icon-link">
-                      <a href="">
-                        <svg class="icon" width="16" height="16">
-                          <use href="./images/sprite.svg#icon-linkedin-1"></use>
-                        </svg>
-                      </a>
-                    </div>
+                  <li class="team-item-icon">
+                    <a class="team-link-icon" href="#">
+                      <svg class="team-icon" width="16" height="16">
+                        <use href="./images/sprite.svg#icon-linkedin-1"></use>
+                      </svg>
+                    </a>
                   </li>
                 </ul>
               </div>
             </li>
-            <!--/иконки с соцсетями Mark Guerrero -->
 
-            <!--Tom Ford-->
+            <!--карточка Tom Ford-->
             <li class="team-item">
               <img
                 class="team-img"
@@ -218,51 +227,42 @@
               <div class="team-set">
                 <h3 class="team-subtitle centered">Tom Ford</h3>
                 <p class="team-text centered">Frontend Developer</p>
-                <ul class="icon-list-link">
-                  <li class="icon-item-link">
-                    <div class="icon-link">
-                      <a href="">
-                        <svg class="icon" width="16" height="16">
-                          <use
-                            href="./images/sprite.svg#icon-instagram-2"
-                          ></use>
-                        </svg>
-                      </a>
-                    </div>
+                <!--иконки с цоцсетями Tom Ford-->
+                <ul class="team-list-icon">
+                  <li class="team-item-icon">
+                    <a class="team-link-icon" href="">
+                      <svg class="team-icon" width="16" height="16">
+                        <use href="./images/sprite.svg#icon-instagram-2"></use>
+                      </svg>
+                    </a>
                   </li>
 
-                  <li class="icon-item-link">
-                    <div class="icon-link">
-                      <a href="">
-                        <svg class="icon" width="16" height="16">
-                          <use href="./images/sprite.svg#icon-twitter-1"></use>
-                        </svg>
-                      </a>
-                    </div>
+                  <li class="team-item-icon">
+                    <a class="team-link-icon" href="">
+                      <svg class="team-icon" width="16" height="16">
+                        <use href="./images/sprite.svg#icon-twitter-1"></use>
+                      </svg>
+                    </a>
                   </li>
-                  <li class="icon-item-link">
-                    <div class="icon-link">
-                      <a href="">
-                        <svg class="icon" width="16" height="16">
-                          <use href="./images/sprite.svg#icon-facebook-1"></use>
-                        </svg>
-                      </a>
-                    </div>
+                  <li class="team-item-icon">
+                    <a class="team-link-icon" href="">
+                      <svg class="team-icon" width="16" height="16">
+                        <use href="./images/sprite.svg#icon-facebook-1"></use>
+                      </svg>
+                    </a>
                   </li>
-                  <li class="icon-item-link">
-                    <div class="icon-link">
-                      <a href="">
-                        <svg class="icon" width="16" height="16">
-                          <use href="./images/sprite.svg#icon-linkedin-1"></use>
-                        </svg>
-                      </a>
-                    </div>
+                  <li class="team-item-icon">
+                    <a class="team-link-icon" href="">
+                      <svg class="team-icon" width="16" height="16">
+                        <use href="./images/sprite.svg#icon-linkedin-1"></use>
+                      </svg>
+                    </a>
                   </li>
                 </ul>
               </div>
             </li>
 
-            <!--Camila Garcia-->
+            <!--карточка Camila Garcia-->
             <li class="team-item">
               <img
                 class="team-img"
@@ -274,53 +274,43 @@
               <div class="team-set">
                 <h3 class="team-subtitle centered">Camila Garcia</h3>
                 <p class="team-text centered">Marketing</p>
-                <ul class="icon-list-link">
-                  <li class="icon-item-link">
-                    <div class="icon-link">
-                      <a href="">
-                        <svg class="icon" width="16" height="16">
-                          <use
-                            href="./images/sprite.svg#icon-instagram-2"
-                          ></use>
-                        </svg>
-                      </a>
-                    </div>
+                <ul class="team-list-icon">
+                  <li class="team-item-icon">
+                    <a class="team-link-icon" href="">
+                      <svg class="team-icon" width="16" height="16">
+                        <use href="./images/sprite.svg#icon-instagram-2"></use>
+                      </svg>
+                    </a>
                   </li>
 
-                  <li class="icon-item-link">
-                    <div class="icon-link">
-                      <a href="">
-                        <svg class="icon" width="16" height="16">
-                          <use href="./images/sprite.svg#icon-twitter-1"></use>
-                        </svg>
-                      </a>
-                    </div>
+                  <li class="team-item-icon">
+                    <a class="team-link-icon" href="">
+                      <svg class="team-icon" width="16" height="16">
+                        <use href="./images/sprite.svg#icon-twitter-1"></use>
+                      </svg>
+                    </a>
                   </li>
 
-                  <li class="icon-item-link">
-                    <div class="icon-link">
-                      <a href="">
-                        <svg class="icon" width="16" height="16">
-                          <use href="./images/sprite.svg#icon-facebook-1"></use>
-                        </svg>
-                      </a>
-                    </div>
+                  <li class="team-item-icon">
+                    <a class="team-link-icon" href="">
+                      <svg class="team-icon" width="16" height="16">
+                        <use href="./images/sprite.svg#icon-facebook-1"></use>
+                      </svg>
+                    </a>
                   </li>
 
-                  <li class="icon-item-link">
-                    <div class="icon-link">
-                      <a href="">
-                        <svg class="icon" width="16" height="16">
-                          <use href="./images/sprite.svg#icon-linkedin-1"></use>
-                        </svg>
-                      </a>
-                    </div>
+                  <li class="team-item-icon">
+                    <a class="team-link-icon" href="">
+                      <svg class="team-icon" width="16" height="16">
+                        <use href="./images/sprite.svg#icon-linkedin-1"></use>
+                      </svg>
+                    </a>
                   </li>
                 </ul>
               </div>
             </li>
 
-            <!--Daniel Wilson-->
+            <!--карточка Daniel Wilson-->
             <li class="team-item">
               <img
                 class="team-img"
@@ -332,47 +322,37 @@
               <div class="team-set">
                 <h3 class="team-subtitle centered">Daniel Wilson</h3>
                 <p class="team-text centered">UI Designer</p>
-                <ul class="icon-list-link">
-                  <li class="icon-item-link">
-                    <div class="icon-link">
-                      <a href="">
-                        <svg class="icon" width="16" height="16">
-                          <use
-                            href="./images/sprite.svg#icon-instagram-2"
-                          ></use>
-                        </svg>
-                      </a>
-                    </div>
+                <ul class="team-list-icon">
+                  <li class="team-item-icon">
+                    <a class="team-link-icon" href="">
+                      <svg class="team-icon" width="16" height="16">
+                        <use href="./images/sprite.svg#icon-instagram-2"></use>
+                      </svg>
+                    </a>
                   </li>
 
-                  <li class="icon-item-link">
-                    <div class="icon-link">
-                      <a href="">
-                        <svg class="icon" width="16" height="16">
-                          <use href="./images/sprite.svg#icon-twitter-1"></use>
-                        </svg>
-                      </a>
-                    </div>
+                  <li class="team-item-icon">
+                    <a class="team-link-icon" href="">
+                      <svg class="team-icon" width="16" height="16">
+                        <use href="./images/sprite.svg#icon-twitter-1"></use>
+                      </svg>
+                    </a>
                   </li>
 
-                  <li class="icon-item-link">
-                    <div class="icon-link">
-                      <a href="">
-                        <svg class="icon" width="16" height="16">
-                          <use href="./images/sprite.svg#icon-facebook-1"></use>
-                        </svg>
-                      </a>
-                    </div>
+                  <li class="team-item-icon">
+                    <a class="team-link-icon" href="">
+                      <svg class="team-icon" width="16" height="16">
+                        <use href="./images/sprite.svg#icon-facebook-1"></use>
+                      </svg>
+                    </a>
                   </li>
 
-                  <li class="icon-item-link">
-                    <div class="icon-link">
-                      <a href="">
-                        <svg class="icon" width="16" height="16">
-                          <use href="./images/sprite.svg#icon-linkedin-1"></use>
-                        </svg>
-                      </a>
-                    </div>
+                  <li class="team-item-icon">
+                    <a class="team-link-icon" href="">
+                      <svg class="team-icon" width="16" height="16">
+                        <use href="./images/sprite.svg#icon-linkedin-1"></use>
+                      </svg>
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -380,50 +360,50 @@
           </ul>
         </div>
       </section>
-      <!--------------------------------/TEAM------------------------------------------------>
+      <!------------/TEAM------------------------------------------------------------------------>
 
-      <!---------------------------Customes(клиенты)----------------------------------------->
+      <!----Customes(клиенты)------------------------------------------------------------>
       <section class="customes">
         <div class="container">
           <h2 class="customes-titel">Customers</h2>
           <ul class="customes-list">
             <li class="customes-item">
-              <a class="customes-link" href="">
+              <a class="customes-link" href="#">
                 <svg class="customes-icon" width="104" height="56">
                   <use href="./images/sprite.svg#icon-Logo"></use>
                 </svg>
               </a>
             </li>
             <li class="customes-item">
-              <a class="customes-link" href="">
+              <a class="customes-link" href="#">
                 <svg class="customes-icon" width="104" height="56">
                   <use href="./images/sprite.svg#icon-Logo-1"></use>
                 </svg>
               </a>
             </li>
             <li class="customes-item">
-              <a class="customes-link" href="">
+              <a class="customes-link" href="#">
                 <svg class="customes-icon" width="104" height="56">
                   <use href="./images/sprite.svg#icon-Logo-2"></use>
                 </svg>
               </a>
             </li>
             <li class="customes-item">
-              <a class="customes-link" href="">
+              <a class="customes-link" href="#">
                 <svg class="customes-icon" width="104" height="56">
                   <use href="./images/sprite.svg#icon-Logo-3"></use>
                 </svg>
               </a>
             </li>
             <li class="customes-item">
-              <a class="customes-link" href="">
+              <a class="customes-link" href="#">
                 <svg class="customes-icon" width="104" height="56">
                   <use href="./images/sprite.svg#icon-Logo-4"></use>
                 </svg>
               </a>
             </li>
             <li class="customes-item">
-              <a class="customes-link" href="">
+              <a class="customes-link" href="#">
                 <svg class="customes-icon" width="104" height="56">
                   <use href="./images/sprite.svg#icon-Logo-5"></use>
                 </svg>
@@ -434,7 +414,7 @@
       </section>
     </main>
 
-    <!----------------------------FOOTER---------------------------------------->
+    <!--------------FOOTER------------------------------------------------>
     <footer class="footer">
       <div class="container footer-container">
         <!--обвертка div для a-ccылка и p-текст-->
@@ -454,28 +434,28 @@
           <div class="footer-list-link">
             <ul class="footer-list">
               <li class="footer-item">
-                <a class="footer-link" href="">
-                  <svg width="24" height="24">
+                <a class="footer-link" href="#">
+                  <svg class="footer-icon" width="24" height="24">
                     <use href="./images/sprite.svg#icon-instagram-2"></use>
                   </svg>
                 </a>
               </li>
               <li class="footer-item">
-                <a class="footer-link" href="">
+                <a class="footer-link" href="#">
                   <svg class="footer-icon" width="24" height="24">
                     <use href="./images/sprite.svg#icon-twitter-1"></use>
                   </svg>
                 </a>
               </li>
               <li class="footer-item">
-                <a class="footer-link" href="">
+                <a class="footer-link" href="#">
                   <svg class="footer-icon" width="24" height="24">
                     <use href="./images/sprite.svg#icon-facebook-1"></use>
                   </svg>
                 </a>
               </li>
               <li class="footer-item">
-                <a class="footer-link" href="">
+                <a class="footer-link" href="#">
                   <svg class="footer-icon" width="24" height="24">
                     <use href="./images/sprite.svg#icon-linkedin-1"></use>
                   </svg>

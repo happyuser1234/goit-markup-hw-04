@@ -103,6 +103,8 @@ body {
 /*======================HEADER===========================*/
 .header {
   border-bottom: 1px solid var(--sixth-color);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .header-container {
   display: flex;
@@ -225,7 +227,7 @@ body {
       rgba(0, 0, 0, 0.7),
       rgba(0, 0, 0, 0.7)
     ),
-    url('../images/people-office\ 1\ \(1\).jpg');
+    url('../images/people-office.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -247,43 +249,27 @@ body {
 
 /*UL*/
 .solutions-list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
   display: flex;
-  column-gap: 24px;
+  list-style: none;
+  justify-content: center;
+  gap: 24px;
 }
 
-/*li*/
+/*li для svg*/
 .solution-item {
   flex-basis: calc((100% - 72px) / 4);
 }
 
-.solution-item::before {
-  display: block;
-  content: '';
-  height: 64px;
-
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+/*div для иконки */
+.solution-svg {
+  display: flex;
   background-color: var(--background-color-3);
   border-radius: 4px;
-
   margin-bottom: 8px;
-}
-
-.solution-item:nth-child(1)::before {
-  background-image: url(../images/antenna\ 1.svg);
-}
-.solution-item:nth-child(2)::before {
-  background-image: url(../images/clock\ 1.svg);
-}
-.solution-item:nth-child(3)::before {
-  background-image: url(../images/diagram\ 1.svg);
-}
-.solution-item:nth-child(4)::before {
-  background-image: url(../images/astronaut\ 1.svg);
+  width: 264px;
+  height: 112px;
+  align-items: center;
+  justify-content: center;
 }
 
 /*h3-подзаголовок*/
@@ -374,53 +360,55 @@ body {
   font-weight: var(--typical-font-weight);
   font-size: 20px;
   line-height: var(--third-line-height);
-  /* identical to box height, or 120% */
-
   text-align: center;
   letter-spacing: var(--first-letter-spacing);
   color: var(--second-color);
+
   margin-bottom: 8px;
 }
 /*p*/
 .team-text {
   line-height: var(--first-line-height);
-
   text-align: center;
   letter-spacing: var(--first-letter-spacing);
-
   color: var(--text-color);
   margin-bottom: 8px;
 }
-/*ul(icon-list-link)- иконка-список-cсылка*/
-.icon-list-link {
+
+/*ul список ссылок соцсетей*/
+.team-list-icon {
   display: flex;
   list-style: none;
+
   justify-content: center;
   gap: 24px;
 }
 
-/*li(icon-item-link) - иконка-элемент-ссылка*/
-.icon-item-link {
+/*li элемент ссылок соцсетей*/
+.team-item-icon {
   width: 40px;
   height: 40px;
+}
+
+/*a ccылок соцсетей*/
+.team-link-icon {
+  display: flex;
+  width: 100%;
+  height: 100%;
   background-color: var(--background-color-4);
   border-radius: 50%;
-}
-.icon-item-link:nth-first-child {
-  margin-left: 16px;
+  align-items: center;
+  justify-content: center;
+  color: var(--fifth-color);
 }
 
-.icon-item-link:hover,
-.icon-item-link:focus {
+.team-link-icon:hover,
+.team-link-icon:focus {
   background-color: var(--background-color-5);
 }
-
-/*иконка-ccылка*/
-.icon-link {
-  display: block;
-  padding: 12px;
+.team-icon {
+  fill: currentColor;
 }
-
 /*=====================/TEAM============================*/
 /*====================CUSTOMES==========================*/
 
@@ -433,6 +421,11 @@ body {
 
 /*h2*/
 .customes-titel {
+  font-size: var(--fourth-font-size);
+  line-height: var(--fifth-line-height);
+  text-align: center;
+  letter-spacing: var(--first-letter-spacing);
+  color: var(--second-color);
   margin-bottom: 72px;
 }
 
@@ -446,19 +439,19 @@ body {
 
 /*li*/
 .customes-item {
-  height: 88px;
   width: calc((100%-5 * 24px) / 6);
 }
 
 /*a-ссылка*/
 .customes-link {
-  display: block;
+  display: flex;
   width: 100%;
-  height: 100%;
+  height: 88px;
   border: 1px solid var(--seventh-color);
   border-radius: 4px;
-  padding: 16px 32px;
   color: var(--seventh-color);
+  align-items: center;
+  justify-content: center;
 }
 
 .customes-link:hover,
@@ -467,7 +460,7 @@ body {
   border-color: var(--third-color);
 }
 
-/*иконка,которая наследует цвет от родителя*/
+/*иконка,которая наследует цвет от родителя-a*/
 .customes-icon {
   fill: currentColor;
 }
@@ -494,14 +487,13 @@ body {
 
 /*a-главная ссылка*/
 .logo-footer {
-  margin-top: 0;
-  margin-bottom: 16px;
-
+  display: flex;
   font-family: 'Raleway', sans-serif;
   font-weight: var(--first-font-weight);
   font-size: var(--second-font-size);
   line-height: var(--second-line-height);
   color: var(--next-color);
+  margin-bottom: 16px;
 }
 
 /*p-текст*/
@@ -529,28 +521,29 @@ body {
   justify-content: center;
   gap: 16px;
 }
-
-/*li для ссылок соцсетей*/
+/*li для ссылки соцсетей*/
 .footer-item {
   width: 40px;
   height: 40px;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  padding: 8px;
-}
-.footer-item:hover,
-.footer-item:focus {
-  background-color: var(--background-color-6);
 }
 
 /*a для ссылки*/
 .footer-link {
   display: flex;
+  align-items: center;
   justify-content: center;
-  gap: 16px;
-
+  border-radius: 50%;
+  height: 40px;
   width: 100%;
-  height: 100%;
+  color: var(--background-color-3);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-link:hover,
+.footer-link:focus {
+  background-color: var(--background-color-6);
+}
+.footer-icon {
+  fill: currentColor;
 }
 
 /*===================/FOOTER=============================*/
@@ -585,8 +578,8 @@ body {
 .menu-btn:focus {
   background-color: var(--third-color);
   color: var(--first-color);
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /*ul-список img*/
@@ -596,7 +589,7 @@ body {
   flex-wrap: wrap;
 }
 
-/*li карточки Portfolio*/
+/*li карточки Portfolio
 .portfolio-item {
   margin-bottom: 48px;
   margin-right: 24px;
@@ -609,7 +602,7 @@ body {
   margin-bottom: 0;
 }
 
-/*hover,focus на li-ку*/
+/*hover,focus на li-ку
 .portfolio-item:hover,
 .portfolio-item:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -618,7 +611,6 @@ body {
 
 /*div для h2 и p в карточке*/
 .box {
-  padding-left: 16px;
   border-bottom: 1px solid var(--sixth-color);
   border-left: 1px solid var(--sixth-color);
   border-right: 1px solid var(--sixth-color);
@@ -632,11 +624,13 @@ body {
   letter-spacing: var(--first-letter-spacing);
   color: var(--second-color);
   margin-bottom: 8px;
+  padding-left: 16px;
 }
 /*p*/
 .sec-text {
   line-height: var(--first-line-height);
   letter-spacing: var(--first-letter-spacing);
   color: var(--text-color);
+  padding-left: 16px;
 }
 /*================/MAIN MENU=============================*/
